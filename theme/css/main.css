@@ -1,185 +1,299 @@
-/*
-    Theme Name: mnmlist
-    Theme URI: http://mathieu.agopian.info/mnmlist/theme.html
-    Description: Theme adapted from http://mnmlist.com/theme/ from Leo Babauta, a very clean minimalist theme, without comments, search, archives or other features.
-    Author: Mathieu Agopian
-    Autor URI: http://mathieu.agopian.info
-
-    This theme is uncopyrighted, free, and offered as is.
-
-    Update (inverted colors, minor changes) by Tastalian, 2013-03-20.
-*/
-
 @import url("pygment.css");
-
-/* line 13, ../../compass/src/main.scss */
+@import url(http://fonts.googleapis.com/css?family=Overlock:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+/*
+ *  Name: Fresh
+ *  Date: February 2013
+ *  Description: A Pelican theme with clean layout. Based on Smashing HTML5 and Twitter Bootstrap.
+ *  Version: 1.0.0
+ *  Author: Jui-Shan Liang
+ *  Author URI: http://jsliang.com
+ */
 body {
-  background: #1E1E1E;
-  color: #EEE;
-  font: 20px Hoefler Text, bodyfont, serif;
-  line-height: 30px;
-  max-width: 30em;
-  margin: 60px 14px 0 64px;
-}
-
-/* line 28, ../../compass/src/main.scss */
-h1 {
-  color: #F00;
-  font-family: Helvetica, sans-serif;
-  font-size: 1.5em;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-
-/* line 34, ../../compass/src/main.scss */
-h2 {
-  color: #DDD;
-  font-family: Helvetica, sans-serif;
-  font-size: 1.3em;
-}
-
-/* line 38, ../../compass/src/main.scss */
-h3 {
-  color: #CCC;
-  font-family: Helvetica, sans-serif;
-  font-size: 1em;
-}
-
-/* line 42, ../../compass/src/main.scss */
-h4 {
-  color: #CCC;
-  font-family: Helvetica, sans-serif;
-  font-size: 0.9em;
-}
-
-/* line 46, ../../compass/src/main.scss */
-time, #sitename {
-  color: #c0c0c0;
-  font-size: 75%;
-  font-variant: small-caps;
-}
-
-/* line 51, ../../compass/src/main.scss */
-img {
-  border: none;
-}
-
-/* line 55, ../../compass/src/main.scss */
-blockquote {
-  border-left: 1px solid #A5ABAB;
-  margin: 0px;
-  padding: 0 12px 0 12px;
-}
-
-/* line 61, ../../compass/src/main.scss */
-p {
-  line-height: 30px;
-  margin: 30px auto;
-  text-indent: 0px;
-}
-
-/* line 65, ../../compass/src/main.scss */
-p.caption {
-  font-size: 80%;
-  margin-top: 0;
-}
-
-/* my own link style (Tastalian) */
+  color: #333;
+  font-size: 15px;
+  font-family: "Lucida Sans", sans-serif;
+  line-height: 22.5px;
+  margin: 0;
+  padding: 0;
+  text-align: left; }
 
 a {
-    color: #3B0;
-    text-decoration: none;
-}
+  color: #226ae9; }
+  a:hover {
+    color: #08c; }
 
-a:hover {
-    background-color: #3B0;
-    color: white;
-}
-
-a:visited {
-    color: #F60;
-}
-
-a:visited:hover {
-    background-color: #F60;
-    color: white;
-}
-
-/* line 78, ../../compass/src/main.scss */
-ul, ol {
-  padding: .5em 0em 1em 3.2em;
-}
-
-/* line 80, ../../compass/src/main.scss */
-ul li, ol li {
-  line-height: 30px;
-  padding: 6px 0 0 0;
-}
-
-/* line 86, ../../compass/src/main.scss */
-strong {
-  color: #999;
-  font-family: Georgia, "Times New Roman", Times, serif;
+h1 {
+  font-family: "Microsoft YaHei", Overlock, sans-serif;
   font-weight: bold;
-}
+  font-size: 30px;
+  line-height: 60px; }
 
-/* line 92, ../../compass/src/main.scss */
-tt, pre {
-  background-color: #2A2A2A;
-  font-family: Inconsolata, Monaco, monospace;
-  line-height: 1.2em;
-}
+h2 {
+  font-family: "Microsoft YaHei", Overlock, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #113D8B;
+  line-height: 48px; }
 
-/* line 98, ../../compass/src/main.scss */
-pre {
+h3 {
+  font-family: "Microsoft YaHei", Overlock, sans-serif;
+  font-weight: bold;
+  font-size: 21.6px;
+  color: #000;
+  line-height: 43.2px; }
+
+h4 {
+  font-family: "Microsoft YaHei", Overlock, sans-serif;
+  font-weight: bold;
+  font-size: 19.44px;
+  color: #000;
+  line-height: 38.88px; }
+
+h5 {
+  font-family: "Microsoft YaHei", Overlock, sans-serif;
+  font-weight: bold;
+  font-size: 17.496px;
+  color: #666;
+  line-height: 34.992px; }
+
+h6 {
+  font-family: "Microsoft YaHei", Overlock, sans-serif;
+  font-weight: bold;
+  font-size: 15.7464px;
+  color: #777;
+  line-height: 31.4928px; }
+
+hr {
+  border: 2px solid #eeeeee; }
+
+strong, b {
+  font-weight: bold; }
+
+em, i {
+  font-style: italic; }
+
+ul {
+  list-style: outside disc;
+  margin: 1em 0 1.5em 1.5em; }
+
+ol {
+  list-style: outside decimal;
+  margin: 1em 0 1.5em 1.5em; }
+
+.post-info {
   font-size: 0.8em;
-  overflow: auto;
-  padding: 10px;
-}
-
-/* line 104, ../../compass/src/main.scss */
-header {
-  padding-bottom: 20px;
-}
-
-/* line 106, ../../compass/src/main.scss */
-header a {
-  border-bottom: none;
-}
-
-/* line 108, ../../compass/src/main.scss */
-header a#page-title {
-  font-weight: bold;
-}
-
-/* line 112, ../../compass/src/main.scss */
-#article-list {
-  margin-top: 100px;
-}
-
-/* line 114, ../../compass/src/main.scss */
-#article-list ol li {
-  line-height: 1.2em;
-  list-style-type: none;
-  padding-bottom: 10px;
-}
-
-/* line 121, ../../compass/src/main.scss */
-footer {
-  background: #2A2A2A;
-  color: #CCC;
-  font-family: helvetica, sans-serif;
-  font-size: 13px;
-  letter-spacing: 4px;
-  margin-left: 20px;
-}
-
-/* line 132, ../../compass/src/main.scss */
-footer li {
-  display: inline;
-}
-
-/* line 135, ../../compass/src/main.scss */
-footer p {
   text-align: right;
-}
+  margin-bottom: 1em; }
+  .post-info address {
+    font-style: normal;
+    display: inline; }
+
+.readmore {
+  margin-top: 1em;
+  font-weight: bold; }
+
+.archive_row {
+  font-family: "Microsoft YaHei", Overlock, sans-serif; }
+  .archive_row .archive_year {
+    color: #113D8B;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    text-align: center; }
+  .archive_row .archive_month {
+    color: #000;
+    font-size: 21.6px;
+    font-weight: bold;
+    margin-top: 21.6px;
+    text-align: center; }
+  .archive_row .archive_day {
+    text-align: center; }
+
+pre {
+  background-color: #eeeeee;
+  padding: 10px;
+  margin: 10px;
+  overflow: auto; }
+
+code, pre {
+  font-family: 'PT Mono', sans-serif; }
+
+blockquote {
+  margin: 20px;
+  font-style: normal;
+  border: 0; }
+  blockquote p {
+    font-size: 15px;
+    margin-bottom: 1em;
+    font-weight: normal; }
+
+header, section, footer, aside, nav, article, figure {
+  display: block; }
+
+section {
+  padding: 1em; }
+
+img.right, figure.right {
+  float: right;
+  margin: 0 0 2em 2em; }
+
+img.left, figure.left {
+  float: left;
+  margin: 0 2em 2em 0; }
+
+#banner {
+  margin: 0 auto;
+  padding: 2.5em 0 0 0; }
+  #banner h1 {
+    font-size: 4em;
+    font-family: 'Overlock';
+    line-height: 1;
+    text-align: center; }
+    #banner h1 a:link, #banner h1 a:visited {
+      color: #000305;
+      display: block;
+      font-weight: bold;
+      margin: 0 0 0.6em 0.2em;
+      text-decoration: none; }
+    #banner h1 a:hover, #banner h1 a:active {
+      color: #113D8B;
+      text-shadow: 1px 1px #fff; }
+  #banner .nav > li > a {
+    font-family: Overlock, sans-serif;
+    font-weight: bold; }
+    #banner .nav > li > a:hover {
+      text-shadow: 1px 1px #bbb; }
+
+#google-custom-search {
+  width: 300px;
+  float: right;
+  margin-top: 5px; }
+  #google-custom-search .gsc-control-cse {
+    padding: 0 !important;
+    border: 0 !important;
+    background-color: transparent !important; }
+
+#sidebar {
+  padding: 0.5em; }
+
+#site-footer {
+  text-align: right;
+  font-size: 0.8em;
+  padding: 1em; }
+  #site-footer address {
+    display: inline; }
+
+.hentry {
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #eeeeee;
+  padding: 1.5em 0; }
+
+li:last-child .hentry {
+  border: 0;
+  margin: 0; }
+
+#content > .hentry {
+  border: 0;
+  margin: 0;
+  padding: 1em 0; }
+
+.hentry img {
+  display: none; }
+
+.entry-title {
+  margin-bottom: 10px;
+  margin-top: 0; }
+  .entry-title a:link, .entry-title a:visited {
+    text-decoration: none;
+    color: #333; }
+  .entry-title a:hover {
+    color: #113D8B; }
+
+.sharethis, .sharethis-top, .sharethis-bottom {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.sharethis-top {
+  text-align: right; }
+
+.sharethis-bottom {
+  text-align: left; }
+
+#posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 1em; }
+
+.paginator {
+  padding-left: 1em; }
+
+#comments-list {
+  list-style: none;
+  margin: 0 1em; }
+  #comments-list blockquote {
+    background: #f8f8f8;
+    clear: both;
+    font-style: normal;
+    margin: 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; }
+  #comments-list footer {
+    color: #888;
+    padding: 0.5em 1em 0 0;
+    text-align: right; }
+  #comments-list li:nth-child(2n) blockquote {
+    background: #F5f5f5; }
+
+#add-comment label {
+  clear: left;
+  float: left;
+  text-align: left; }
+#add-comment input[type='text'], #add-comment input[type='email'], #add-comment input[type='url'] {
+  float: left; }
+#add-comment textarea {
+  float: left;
+  height: 150px; }
+#add-comment p.req {
+  clear: both;
+  margin: 0 0.5em 1em 0;
+  text-align: right; }
+#add-comment input[type='submit'] {
+  float: right;
+  margin: 0 0.5em; }
+#add-comment * {
+  margin-bottom: .5em; }
+
+.err {
+  border: 0; }
+
+#cloud {
+  padding: 2px;
+  line-height: 2em;
+  text-align: center;
+  margin: 0; }
+
+#cloud a {
+  padding: 0px; }
+
+#cloud li {
+  display: inline; }
+
+li.tag-4 {
+  font-size: 0.8em;
+  font-weight: 100; }
+
+li.tag-3 {
+  font-size: 1.0em;
+  font-weight: 200; }
+
+li.tag-2 {
+  font-size: 1.2em;
+  font-weight: 300; }
+
+li.tag-1 {
+  font-size: 1.4em;
+  font-weight: 400; }
